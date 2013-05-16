@@ -1,18 +1,55 @@
----
-����layout: default
-����title: �ҵ�Blog
----
+<!DOCTYPE html>
+<html>
 
-����<h2>{{ page.title }}</h2>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Blog : 纪念我的毕业论文" />
 
-����<p>���ץ��ʱ������ģ����ڹ����ȼ����ټ�����##��</p>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-����<ul>
+    <title>Blog</title>
+  </head>
 
-��������{% for post in site.posts %} 
+  <body>
 
-������������<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yunyee/blog">View on GitHub</a>
 
-��������{% endfor %}
+          <h1 id="project_title">Blog</h1>
+          <h2 id="project_tagline">纪念我的毕业论文</h2>
 
-����</ul>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yunyee/blog/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yunyee/blog/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>#人生最悲惨的事情莫过于毕业论文</h3>
+
+<p>　　虽然准备工作准备的很早，但是由于设备和思路的原因一直没有得到很的实验结果，内心一直不安。不过，没想到写的时候很多思路和想法都明朗了，颇有收获。</p>
+
+<p>　　不过，写的时间太紧了，期间大脑CPU一直超负荷运转，没有思考的机会。机械的将一个个字敲上去，语言很不好，最后修改很多次，折腾到高烧38.8度。这么多年没感冒了，原来学术什么的真的需要好身体做底子的。对以后的生活感到焦虑。</p>
+
+<p>　　生活总是要行进，先做好手上的东西吧。</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Blog maintained by <a href="https://github.com/yunyee">yunyee</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
